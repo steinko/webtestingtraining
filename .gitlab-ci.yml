@@ -1,0 +1,7 @@
+stages:          
+  - test
+acceptance-test-job:  
+  stage: test   
+  script:
+    - npm i
+    - npm run cypress:run
