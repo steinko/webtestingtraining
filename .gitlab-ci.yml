@@ -2,7 +2,7 @@ stages:
   - test
 
 test:
-  image: cypress/node16.14.0-slim-chrome99-ff97
+  image: cypress/browsers:node16.14.0-slim-chrome99-ff97
   stage: test
   script:
     # install dependencies
