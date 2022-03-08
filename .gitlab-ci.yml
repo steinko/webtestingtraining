@@ -6,7 +6,7 @@ test:
   stage: test
   script:
     # install dependencies
-    - npm ci
+    - npm i
   
     # run Cypress tests
     - npm run cypress:run
