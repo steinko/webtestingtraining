@@ -1,7 +1,12 @@
-stages:          
+stages:
   - test
-acceptance-test-job:  
-  stage: test   
+
+test:
+  image: cypress/node16.14.0-slim-chrome99-ff97
+  stage: test
   script:
-    - npm i
+    # install dependencies
+    - npm ci
+  
+    # run Cypress tests
     - npm run cypress:run
