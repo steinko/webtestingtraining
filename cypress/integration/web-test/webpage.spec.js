@@ -1,3 +1,4 @@
-it("should open a web page", () => {
-         cy.visit( 'https://alphabookstore.shop/contact')
+it("should enter John in the Name field", () => {
+         cy.visit( 'https://alphabookstore.shop')
+         cy.get("[placeholder*='Enter your name']").type('John')
 })
