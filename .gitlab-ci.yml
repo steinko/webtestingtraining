@@ -1,0 +1,18 @@
+stages:
+  - unit-test
+  - acceptance-test
+
+unit-test:
+  image: node:latest
+  stage: unit-test
+  script:
+    - npm i
+    - npm test
+   
+
+acceptance-test:
+  image: cypress/browsers:node16.14.0-slim-chrome99-ff97
+  stage: acceptance-test
+  script:
+    - npm i
+    - npm run cypress:run
