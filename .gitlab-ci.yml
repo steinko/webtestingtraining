@@ -19,8 +19,12 @@ acceptance-test:
     - npm run cypress:run
 
 deplloy:
+  image: node:latest
   stage: deploy
   script:
     - cd serverless
     - npm install -g serverless
-    - serverless deploy --aws-profile default   
+    - serverless deploy --aws-profile default 
+  environment:
+    name: staging
+    url: https://localhost:3000  
