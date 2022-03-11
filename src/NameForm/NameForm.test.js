@@ -7,7 +7,7 @@ it('should exist a Named Form',()=> {
 })
 
 
-it('should display entered test',()=> {
+it.skip('should display entered test',()=> {
 	  render(<NameForm />)
       const nameField = screen.getByLabelText('Name:')
       fireEvent.change(nameField,{target: {value: 'Stein'}})
