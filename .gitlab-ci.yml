@@ -22,4 +22,5 @@ deplloy:
   stage: deploy
   script:
     - cd serverless
+    - npm install -g serverless
     - serverless deploy --aws-profile default   
