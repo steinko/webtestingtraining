@@ -21,5 +21,5 @@ acceptance-test:
 deplloy:
   stage: deploy
   script:
-    - cd servereless
+    - cd serverless
     - serverless deploy --aws-profile default   
