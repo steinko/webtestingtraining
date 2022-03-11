@@ -1,6 +1,7 @@
 stages:
   - unit-test
   - acceptance-test
+  - deploy
 
 unit-test:
   image: node:latest
@@ -16,3 +17,9 @@ acceptance-test:
   script:
     - npm i
     - npm run cypress:run
+
+deplloy:
+  stage: deploy
+  script:
+    - cd servereless
+    - serverless deploy --aws-profile default   

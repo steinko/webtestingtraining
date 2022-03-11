@@ -1,0 +1,8 @@
+org: steinko
+app: webtestingtraining
+service: webtestingtraining
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  profile: default
