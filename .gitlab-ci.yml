@@ -16,7 +16,7 @@ acceptance-test:
   stage: acceptance-test
   script:
     - npm i
-    - npm start
+    - npm start&
     - export CYPRESS_HOST=http://localhost:3000
     - npm run cypress:run
 
