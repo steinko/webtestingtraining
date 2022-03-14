@@ -1,9 +1,12 @@
 it("should enter John in the Name field", () => {
 	
          cy.visit(Cypress.env('HOST'))
-         const nameField=cy.findByLabelText('Name:')
-         nameField.type('John')
+         cy.findByLabelText('Name:').type('John')
          cy.findByText("Submit").click()
-         //nameField.toHaveValues('John')
+         cy.on('window:alert', (message) => {
+                expect(message).toBe('A name was submitted: John')
+         })
+         cy.on('window:confirm', () => true);
+         cy.findAllByDisplayValue('John').should('exist')
 
 })
