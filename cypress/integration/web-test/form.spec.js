@@ -4,6 +4,6 @@ it("should enter John in the Name field", () => {
          const nameField=cy.findByLabelText('Name:')
          nameField.type('John')
          cy.findByText("Submit").click()
-        // cy.contains('John')
+         //nameField.toHaveValues('John')
 
 })
