@@ -6,3 +6,11 @@ provider:
   runtime: nodejs14.x
   stage: dev
   profile: default
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: coolweb
+    distributionFolder: ../build

@@ -22,9 +22,11 @@ deplloy:
   image: node:latest
   stage: deploy
   script:
+    - npm i
+    - npm run build
     - cd serverless
     - npm install -g serverless
-    - serverless deploy --aws-profile default 
+    - serverless client deploy --no-confirm  --aws-profile default 
   environment:
     name: staging
-    url: https://localhost:3000  
+    url: http://coolweb.s3-website-us-east-1.amazonaws.com/ 
