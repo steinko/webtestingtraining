@@ -4,6 +4,11 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 module.exports = {
-	collectCoverage: false,
-	coverageReporters: ['locv']
+	collectCoverage: true,
+	coverageReporters: ['cobertura'],
+	reporters:  ["jest-junit", {
+		                          outputDirectory: "junitreport",
+                                  outputName: "junit.xml"
+	                           }
+                ]
 }

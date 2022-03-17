@@ -9,6 +9,10 @@ unit-test:
   script:
     - npm i
     - npm test
+  artifacts:
+    reports:
+      junit: junit.xml
+      cobertura: coverage/cobertura.xml
    
 
 acceptance-test:

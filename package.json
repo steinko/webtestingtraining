@@ -5,6 +5,7 @@
   "dependencies": {
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "jest-junit": "^13.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -14,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "react-scripts test --coverage --reporters=jest-junit",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
     "cypress:run": "nyc  cypress run --record --key 3339aabe-1bcc-4f8c-8098-d08f47ac0b9b"
