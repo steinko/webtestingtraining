@@ -1,0 +1,5 @@
+{ 
+   "include":["cypress/integration/**"],
+   "report-dir": "cypress/coverage",
+   "reporter":["lcov"]
+ }

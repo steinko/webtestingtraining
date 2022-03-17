@@ -14,10 +14,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --record --key 3339aabe-1bcc-4f8c-8098-d08f47ac0b9b"
+    "cypress:run": "nyc  cypress run --record --key 3339aabe-1bcc-4f8c-8098-d08f47ac0b9b"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +41,7 @@
     "@testing-library/cypress": "^8.0.2",
     "@testing-library/jest-dom": "^5.16.2",
     "cypress": "^9.5.2",
-    "cypress-jest-adapter": "^0.1.1"
+    "cypress-jest-adapter": "^0.1.1",
+    "nyc": "^15.1.0"
   }
 }
