@@ -179,17 +179,32 @@
         }
       }
     },
+    "custom": {
+      "client": {
+        "bucketName": "coolweb",
+        "distributionFolder": "../build"
+      }
+    },
+    "plugins": [
+      "serverless-finch"
+    ],
     "pluginsData": {},
     "functions": {},
     "configValidationMode": "warn",
     "serviceFilename": "serverless.yml",
     "initialServerlessConfig": {
+      "org": "steinko",
+      "app": "webtestingtraining",
       "service": "webtestingtraining",
       "provider": {
         "$ref": "$[\"service\"][\"provider\"]"
       },
-      "org": "steinko",
-      "app": "webtestingtraining"
+      "plugins": {
+        "$ref": "$[\"service\"][\"plugins\"]"
+      },
+      "custom": {
+        "$ref": "$[\"service\"][\"custom\"]"
+      }
     },
     "app": "webtestingtraining",
     "org": "steinko",
@@ -200,7 +215,7 @@
     "appUid": "lDt610VfD7vBx3GJ2l"
   },
   "package": {
-    "artifactDirectoryName": "serverless/webtestingtraining/dev/1647007217387-2022-03-11T14:00:17.387Z",
+    "artifactDirectoryName": "serverless/webtestingtraining/dev/1647511121604-2022-03-17T09:58:41.604Z",
     "artifact": ""
   }
 }
