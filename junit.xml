@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="14" failures="0" errors="0" time="2.915">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-03-17T08:40:45" time="1.299" tests="1">
-    <testcase classname=" should exist a Named Form" name=" should exist a Named Form" time="0.067">
+<testsuites name="jest tests" tests="14" failures="0" errors="0" time="2.742">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-03-17T10:08:41" time="1.047" tests="1">
+    <testcase classname=" should exist a Named Form" name=" should exist a Named Form" time="0.06">
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-03-17T08:40:45" time="1.338" tests="10">
-    <testcase classname=" should exist a profile compnent" name=" should exist a profile compnent" time="0.03">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-03-17T10:08:41" time="1.06" tests="3">
+    <testcase classname=" should exist a Named Form" name=" should exist a Named Form" time="0.029">
     </testcase>
-    <testcase classname=" should shows &quot;display details&quot; button" name=" should shows &quot;display details&quot; button" time="0.037">
+    <testcase classname=" should store form data" name=" should store form data" time="0.076">
     </testcase>
-    <testcase classname=" should shows &quot;display details&quot; button" name=" should shows &quot;display details&quot; button" time="0.018">
+    <testcase classname=" should display entered text" name=" should display entered text" time="0.007">
     </testcase>
-    <testcase classname=" should shows &quot;hidden details&quot; button" name=" should shows &quot;hidden details&quot; button" time="0.009">
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-03-17T10:08:41" time="1.077" tests="10">
+    <testcase classname=" should exist a profile compnent" name=" should exist a profile compnent" time="0.028">
     </testcase>
-    <testcase classname=" should not display details" name=" should not display details" time="0.007">
+    <testcase classname=" should shows &quot;display details&quot; button" name=" should shows &quot;display details&quot; button" time="0.035">
+    </testcase>
+    <testcase classname=" should shows &quot;display details&quot; button" name=" should shows &quot;display details&quot; button" time="0.015">
+    </testcase>
+    <testcase classname=" should shows &quot;hidden details&quot; button" name=" should shows &quot;hidden details&quot; button" time="0.008">
+    </testcase>
+    <testcase classname=" should not display details" name=" should not display details" time="0.01">
     </testcase>
     <testcase classname=" should display details" name=" should display details" time="0.005">
     </testcase>
-    <testcase classname=" should not display name" name=" should not display name" time="0.006">
+    <testcase classname=" should not display name" name=" should not display name" time="0.005">
     </testcase>
-    <testcase classname=" should display name" name=" should display name" time="0.005">
+    <testcase classname=" should display name" name=" should display name" time="0.004">
     </testcase>
     <testcase classname=" should  display title" name=" should  display title" time="0.006">
     </testcase>
     <testcase classname=" should display title" name=" should display title" time="0.004">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-03-17T08:40:45" time="1.345" tests="3">
-    <testcase classname=" should exist a Named Form" name=" should exist a Named Form" time="0.032">
-    </testcase>
-    <testcase classname=" should store form data" name=" should store form data" time="0.083">
-    </testcase>
-    <testcase classname=" should display entered text" name=" should display entered text" time="0.008">
     </testcase>
   </testsuite>
 </testsuites>

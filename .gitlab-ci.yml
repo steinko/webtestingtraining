@@ -30,9 +30,8 @@ deplloy:
   script:
     - npm i
     - npm run build
-    - cd serverless
     - npm install -g serverless
-    - serverless client deploy --no-confirm  --aws-profile default
+    - serverless deploy --no-confirm
     - export CYPRESS_HOST=http://coolweb.s3-website-us-east-1.amazonaws.com
     - npm run cypress:run
 
